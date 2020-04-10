@@ -47,7 +47,7 @@
 		082D308623CEEDC100C9D587 /* CartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CartViewController.h; sourceTree = "<group>"; };
 		082D308723CEEDC100C9D587 /* CartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CartViewController.m; sourceTree = "<group>"; };
 		085BA64E23F0FB8A00FD33FA /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
-		085BD3EB23CC64B6002E8F27 /* Airwallex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Airwallex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		085BD3EB23CC64B6002E8F27 /* AU Airwallex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AU Airwallex.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		085BD3EE23CC64B6002E8F27 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		085BD3EF23CC64B6002E8F27 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		085BD3F823CC64B6002E8F27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 		085BD3EC23CC64B6002E8F27 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				085BD3EB23CC64B6002E8F27 /* Airwallex.app */,
+				085BD3EB23CC64B6002E8F27 /* AU Airwallex.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,7 +189,7 @@
 			);
 			name = Examples;
 			productName = Examples;
-			productReference = 085BD3EB23CC64B6002E8F27 /* Airwallex.app */;
+			productReference = 085BD3EB23CC64B6002E8F27 /* AU Airwallex.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -434,7 +434,8 @@
 			baseConfigurationReference = 9EA9D3B9B12EC61CCBFD04C4 /* Pods-Examples.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 6AM6RAJ294;
 				INFOPLIST_FILE = Examples/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -460,8 +461,9 @@
 					"-Objc",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.airwallex.paymentacceptance;
-				PRODUCT_NAME = Airwallex;
+				PRODUCT_BUNDLE_IDENTIFIER = com.airwallex.au;
+				PRODUCT_NAME = "AU Airwallex";
+				PROVISIONING_PROFILE_SPECIFIER = "Airwallex Enterprise (AU)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -471,7 +473,8 @@
 			baseConfigurationReference = 4A6EAE250E77991C1E9B6A69 /* Pods-Examples.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 6AM6RAJ294;
 				INFOPLIST_FILE = Examples/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -497,8 +500,9 @@
 					"-Objc",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.airwallex.paymentacceptance;
-				PRODUCT_NAME = Airwallex;
+				PRODUCT_BUNDLE_IDENTIFIER = com.airwallex.au;
+				PRODUCT_NAME = "AU Airwallex";
+				PROVISIONING_PROFILE_SPECIFIER = "Airwallex Enterprise (AU)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

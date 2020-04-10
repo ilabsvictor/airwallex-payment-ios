@@ -30,7 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.regionLabel.text = @"WeChat Region: HK";
+    self.regionLabel.text = @"WeChat Region: AU";
     NSString *version = [[NSBundle mainBundle] objectForInfoDictionaryKey: @"CFBundleShortVersionString"];
     NSString *build = [[NSBundle mainBundle] objectForInfoDictionaryKey: (NSString *)kCFBundleVersionKey];
     self.versionLabel.text = [NSString stringWithFormat:@"App Version: v%@ (%@)", version, build];

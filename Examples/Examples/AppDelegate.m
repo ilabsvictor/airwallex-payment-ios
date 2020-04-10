@@ -38,10 +38,10 @@
     [Airwallex setDefaultBaseURL:[NSURL URLWithString:paymentBaseURL]];
     
     // WeChatSDK 1.8.2
-    [WXApi registerApp:@"wx4c86d73fe4f82431" enableMTA:YES];
+    [WXApi registerApp:@"wxfad13fd6681a62b0" enableMTA:YES];
     
     // WeChatSDK 1.8.6.1
-    //    [WXApi registerApp:@"wx4c86d73fe4f82431" universalLink:@"https://airwallex.com/"];
+    //    [WXApi registerApp:@"wxfad13fd6681a62b0" universalLink:@"https://airwallex.com/"];
     return YES;
 }
 
