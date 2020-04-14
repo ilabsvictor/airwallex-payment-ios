@@ -11,6 +11,7 @@
 #import <IQKeyboardManager/IQKeyboardManager.h>
 #import <WechatOpenSDK/WXApi.h>
 #import <Airwallex/Airwallex.h>
+#import "AirwallexExamplesKeys+Utils.h"
 #import "Constant.h"
 
 @interface AppDelegate () <WXApiDelegate>
@@ -33,15 +34,15 @@
     [WXApi startLogByLevel:WXLogLevelNormal logBlock:^(NSString * _Nonnull log) {
         NSLog(@"WeChat Log: %@", log);
     }];
-
+    
     // Airwallex
     [Airwallex setDefaultBaseURL:[NSURL URLWithString:paymentBaseURL]];
     
     // WeChatSDK 1.8.2
-    [WXApi registerApp:@"wxfad13fd6681a62b0" enableMTA:YES];
+    [WXApi registerApp:[AirwallexExamplesKeys shared].weChatAppID enableMTA:YES];
     
     // WeChatSDK 1.8.6.1
-    //    [WXApi registerApp:@"wxfad13fd6681a62b0" universalLink:@"https://airwallex.com/"];
+    //    [WXApi registerApp:[AirwallexExamplesKeys shared].weChatAppID universalLink:@"https://airwallex.com/"];
     return YES;
 }
 
